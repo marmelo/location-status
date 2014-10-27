@@ -20,7 +20,7 @@ class LocationStatus(rumps.App):
             None
         ]
         
-        rumps.Timer(self.update, 5).start()
+        rumps.Timer(self.update, 30).start()
     
     def update(self, timer):
         data = self.ipinfo()
